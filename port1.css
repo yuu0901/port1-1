@@ -1,22 +1,44 @@
+/*----------------------------------------------------------*/
+/* base */
+/*----------------------------------------------------------*/
 body{
     background-image:url(back.png);
     background-attachment: fixed;
     color: white;
 }
+/*----------------------------------------------------------*/
+/* header */
+/*----------------------------------------------------------*/
 header{
    position: fixed;
    width: 100%;
    top: 0;
    z-index: 10000; 
 }
-.wlfu{
-    width: 100%;
-}
 
+
+/*----------------------------------------------------------*/
+/* 自己紹介 */
+/*----------------------------------------------------------*/
+/* 共通container */
 .container{
     margin: 0px auto;
     padding: 0px auto;
 }
+
+.wlfu {
+  width: 100%;
+}
+
+.m-h2 {
+  background: #212529;
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-top: 25px;
+  padding: 10px;
+  opacity: .8;
+}
+
 /*プロフィール */
 .s-icon{
   border: 15px solid rgb(41,100,86);
@@ -36,7 +58,9 @@ header{
   text-align: center;
 }
 
-/*スキル*/
+/*----------------------------------------------------------*/
+/* スキル */
+/*----------------------------------------------------------*/
 .m-wrapper{
     display: flex;
     justify-content: center;
@@ -53,15 +77,10 @@ header{
 .card-text{
   color: black;
 }
-.m-h2{
-  background: #212529;
-  border: 5px solid white;
-  border-radius: 10px;
-  margin-top: 25px;
-  padding: 10px;
-  opacity: .8;
-}
-/*働き*/
+
+/*----------------------------------------------------------*/
+/* 模写・仕事内容 */
+/*----------------------------------------------------------*/
 .card{
     margin-top: 20px;
 }
@@ -76,7 +95,9 @@ header{
     height: 150px;
   }
 
-/*イラスト*/
+/*----------------------------------------------------------*/
+/* イラスト集 */
+/*----------------------------------------------------------*/
 .carousel-item{
     height: 32rem;
     width: 100%;
@@ -113,7 +134,9 @@ header{
     display: inline-block;
 }
 
-/*お問い合わせ*/
+/*----------------------------------------------------------*/
+/* お問い合わせ */
+/*----------------------------------------------------------*/
 .contact-form{
   text-align: center;
   font-weight: bold;
@@ -129,7 +152,9 @@ button{
     font-size: 18px;
 }
 
-/*フッター*/
+/*----------------------------------------------------------*/
+/* フッター */
+/*----------------------------------------------------------*/
 .f-name{
     background-color: #212529;
     padding: 20px;
@@ -139,7 +164,7 @@ button{
   }
 
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 767px){
   .carousel-item{
     height: 24rem;
     left: 0px;
